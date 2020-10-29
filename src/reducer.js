@@ -13,6 +13,12 @@ const reducer = (state, action) => {
       return {
         ...state,
         basket: [...state.basket, action.item]
+      };
+    // empty basket
+    case 'EMPTY_BASKET':
+      return {
+        ...state,
+        basket: []
       }
     case 'REMOVE_FROM_BASKET':
       const index = state.basket.findIndex(
