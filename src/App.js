@@ -37,6 +37,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          {/* orders */}
+          <Route path="/orders">
+            <Orders />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
